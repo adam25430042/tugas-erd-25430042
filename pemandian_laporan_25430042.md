@@ -1,4 +1,4 @@
-# Laporan Praktikum Basis Data - Pertemuan 02
+# Laporan Tugas ERD - Sistem Pemandian Air Panas
 
 - **Nama:** ADAM MAULANA FIRMANSYAH
 - **NIM:** 25430042
