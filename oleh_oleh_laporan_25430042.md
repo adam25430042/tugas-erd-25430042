@@ -201,11 +201,7 @@ Setelah impor ulang, phpMyAdmin menampilkan pesan bahwa 10 kueri berhasil dilaku
 
 **Kendala 3: pesan `ERROR 1046 No database selected`.** Pesan ini muncul pada perintah `CREATE DATABASE` dan `USE` di awal impor, serta setelah `DROP DATABASE`, karena saat itu belum ada basis data yang terpilih. Pesan tersebut tidak menggagalkan proses: keempat tabel dan data contoh tetap berhasil dibuat, sehingga saya menganggapnya sebagai efek samping tampilan.
 
-**Kendala 4: contohnya: PRIMARY KEY (Maulana) pada file tabel yang menyebabkan #1072, serta catatan #1974 saat DROP USER.
-
-
-**Catatan 5: `Note #1974 Can't drop user ... it doesn't exist`.** Pesan ini muncul saat `DROP USER IF EXISTS` dijalankan sebelum membuat akun. Ini hanya catatan bahwa akun yang akan dihapus memang belum ada, bukan galat.
-
+**Catatan 4: `Note #1974 Can't drop user ... it doesn't exist`.** Pesan ini muncul saat `DROP USER IF EXISTS` dijalankan sebelum membuat akun. Ini hanya catatan bahwa akun yang akan dihapus memang belum ada, bukan galat.
 
 ## 8. Kesimpulan
 
@@ -223,6 +219,8 @@ Saya menggunakan AI sebagai alat bantu untuk memahami pola ERD empat entitas, me
 
 Bukti commit dan isi repositori tersimpan di GitHub.
 
+![Bukti git push](img_oleh_oleh/img_oleh_10_git_push.png)
+
 ## Checklist
 
 - [x] ERD Crow's Foot (PNG dan PDF)
@@ -235,7 +233,7 @@ Bukti commit dan isi repositori tersimpan di GitHub.
 - [x] Bukti Designer / relasi
 - [x] Bukti User accounts
 - [x] Bukti hak akses per tabel
-- [ ] Bukti login akun
+- [x] Bukti login akun
 - [x] akun_pusat_oleh_oleh.sql
 - [x] Titik Analisis 1 sampai 4
-- [ ] Git push dan commit
+- [x] Git push dan commit
