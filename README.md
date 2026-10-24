@@ -27,6 +27,7 @@ Pada kedua tugas, tabel master berelasi **One-to-Many** ke tabel transaksi, dan 
 ├── img_oleh_oleh/                  screenshot bukti tugas 2
 ├── db_pemandian_air_panas.sql      skrip database dan tabel tugas 1
 ├── db_pusat_oleh_oleh.sql          skrip database dan tabel tugas 2
+├── akun_pemandian_air_panas.sql    skrip akun per tabel tugas 1
 ├── akun_pusat_oleh_oleh.sql        skrip akun per tabel tugas 2
 ├── pemandian_laporan_25430042.md   laporan tugas 1
 └── oleh_oleh_laporan_25430042.md   laporan tugas 2
@@ -38,8 +39,10 @@ Pada kedua tugas, tabel master berelasi **One-to-Many** ke tabel transaksi, dan 
 2. Buka tab **Import**, pilih skrip tabel, lalu klik **Import**:
    - `db_pemandian_air_panas.sql` untuk tugas 1
    - `db_pusat_oleh_oleh.sql` untuk tugas 2
-3. Untuk tugas 2, akun per tabel dibuat dengan `akun_pusat_oleh_oleh.sql`:
-   - Pilih database `db_pusat_oleh_oleh` di panel kiri, lalu buka tab **SQL**.
+3. Akun per tabel dibuat dengan skrip akun:
+   - `akun_pemandian_air_panas.sql` untuk tugas 1
+   - `akun_pusat_oleh_oleh.sql` untuk tugas 2
+   - Pilih database yang sesuai di panel kiri, lalu buka tab **SQL**.
    - Ganti password pada tiga baris `CREATE USER` sesuai keinginan, tempel isi skrip, lalu klik **Go**.
 
 Skrip tabel harus dijalankan **sebelum** skrip akun, karena hak akses diberikan pada tabel yang sudah ada. Jika database dengan nama yang sama sudah ada, hapus dulu dengan `DROP DATABASE IF EXISTS nama_database;` sebelum mengimpor ulang.
@@ -53,7 +56,7 @@ Setiap akun hanya diberi hak `SELECT, INSERT, UPDATE, DELETE` pada satu tabel mi
 | 1 | `user_pengunjung`, `user_kolam`, `user_kasir`, `user_tiket` | masing-masing satu tabel |
 | 2 | `user_wisatawan`, `user_produk`, `user_kasir_oleh`, `user_pembelian` | masing-masing satu tabel |
 
-Akun tugas 1 dibuat langsung melalui tab SQL di phpMyAdmin, sedangkan akun tugas 2 dibuat dengan `akun_pusat_oleh_oleh.sql`. Password pada skrip hanya untuk latihan dan tidak digunakan di luar praktikum ini.
+Akun tugas 1 dibuat dengan `akun_pemandian_air_panas.sql`, sedangkan akun tugas 2 dengan `akun_pusat_oleh_oleh.sql`. Password pada skrip hanya untuk latihan dan tidak digunakan di luar praktikum ini.
 
 ## Laporan
 
